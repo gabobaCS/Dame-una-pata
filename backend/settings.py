@@ -14,8 +14,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'txn_jt&tb(i5@#0x34pga-%ddz7^*77xht-g=p=&rbwrj+)l#l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['dame-una-pata.herokuapp.com']
+DEBUG = True
+ALLOWED_HOSTS = ['dame-una-pata.herokuapp.com', '*']
 
 
 # Application definition
