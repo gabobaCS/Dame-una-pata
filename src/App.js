@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
+import Call from './components/Call.js'
 
 function App() {
   return (
-    <div className="App">
-    sddsf
-    </div>
+    <Call/>
   );
 }
 

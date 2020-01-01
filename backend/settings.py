@@ -17,7 +17,7 @@ SECRET_KEY = 'txn_jt&tb(i5@#0x34pga-%ddz7^*77xht-g=p=&rbwrj+)l#l'
 DEBUG = True
 ALLOWED_HOSTS = ['dame-una-pata.herokuapp.com', '*']
 
-
+CORS_ORIGIN_ALLOW_ALL=True
 # Application definition
 
 INSTALLED_APPS = [
@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'corsheaders',
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',  
     'rest_framework',
@@ -34,6 +35,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
